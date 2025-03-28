@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ElevateX AI - AI-powered marketing solutions, chatbot support, content creation, and more!">
+    <meta name="keywords" content="AI marketing, chatbot, content creation, customer support, SEO">
+    <meta name="author" content="ElevateX AI">
+    <title>ElevateX AI - The Future of Marketing</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #00AEEF;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .auth-container {
+            margin-top: 50px;
+        }
+        .chatbot-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .chatbot-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ElevateX AI</h1>
+        <p>AI-powered marketing solutions, chatbot support, content creation, and more!</p>
+        <button class="button" onclick="showAuth()">Start</button>
+    </div>
+    
+    <div class="auth-container" id="auth" style="display:none;">
+        <h2>Login / Signup</h2>
+        <button class="button" onclick="showChatbot()">Login</button>
+        <button class="button" onclick="showChatbot()">Sign Up</button>
+    </div>
+    
+    <div class="chatbot-container" id="chatbot">
+        <iframe class="chatbot-frame" src="https://www.chatbase.co/chatbot-embed/iPHfL3twBTDNd-d8aVrwP"></iframe>
+    </div>
+    
+    <script>
+        function showAuth() {
+            document.getElementById('auth').style.display = 'block';
+        }
+        function showChatbot() {
+            document.getElementById('chatbot').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
